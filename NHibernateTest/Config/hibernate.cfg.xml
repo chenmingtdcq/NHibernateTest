@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+  <session-factory name="NHibernateTest">
+    <property name="connection.provider">
+      NHibernate.Connection.DriverConnectionProvider
+    </property>
+    <property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
+    <property name="connection.connection_string">
+      Database=nhibernate;server=localhost;user id=root;password=mysqlbjdxcm2018;pooling=true;Port=3306;Allow Zero Datetime=true;
+    </property>
+    <property name="dialect">NHibernate.Dialect.MySQL5Dialect</property>
+    <property name="hbm2ddl.auto">update</property>
+    <property name="hbm2ddl.keywords">none</property>
+    <!--找到对应的实体对象-->
+    <mapping assembly="NHibernateORM"/>
+  </session-factory>
+</hibernate-configuration>

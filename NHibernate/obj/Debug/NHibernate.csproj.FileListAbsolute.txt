@@ -1,0 +1,5 @@
+F:\program\practice\NHibernateTest\NHibernate\bin\Debug\NHibernate.dll
+F:\program\practice\NHibernateTest\NHibernate\bin\Debug\NHibernate.pdb
+F:\program\practice\NHibernateTest\NHibernate\obj\Debug\NHibernate.csprojResolveAssemblyReference.cache
+F:\program\practice\NHibernateTest\NHibernate\obj\Debug\NHibernate.dll
+F:\program\practice\NHibernateTest\NHibernate\obj\Debug\NHibernate.pdb
