@@ -45,15 +45,78 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\CLKZD.cs" />
+    <Compile Include="Entity\CSKFBJ.cs" />
+    <Compile Include="Entity\CZCDYD.cs" />
+    <Compile Include="Entity\DGX.cs" />
+    <Compile Include="Entity\DLTB.cs" />
+    <Compile Include="Entity\DZGY.cs" />
+    <Compile Include="Entity\FJMSQ.cs" />
+    <Compile Include="Entity\GCZJD.cs" />
+    <Compile Include="Entity\GDDB.cs" />
+    <Compile Include="Entity\GJGY.cs" />
+    <Compile Include="Entity\JZD.cs" />
+    <Compile Include="Entity\JZKZD.cs" />
+    <Compile Include="Entity\JZX.cs" />
+    <Compile Include="Entity\KFYQ.cs" />
+    <Compile Include="Entity\LSYD.cs" />
+    <Compile Include="Entity\PDT.cs" />
+    <Compile Include="Entity\PZWJSTD.cs" />
+    <Compile Include="Entity\QTJZKFQ.cs" />
+    <Compile Include="Entity\SCZZBHQ.cs" />
+    <Compile Include="Entity\SDGY.cs" />
+    <Compile Include="Entity\SGSJ.cs" />
+    <Compile Include="Entity\SLGY.cs" />
+    <Compile Include="Entity\SZGCMX.cs" />
+    <Compile Include="Entity\SZZSYX.cs" />
+    <Compile Include="Entity\XZQ.cs" />
+    <Compile Include="Entity\XZQJX.cs" />
+    <Compile Include="Entity\YYSSYD.cs" />
+    <Compile Include="Entity\ZD.cs" />
+    <Compile Include="Entity\ZD_QLR.cs" />
+    <Compile Include="Entity\ZJ.cs" />
+    <Compile Include="Entity\ZRBHQ.cs" />
+    <Compile Include="Entity\ZRYCBHQ.cs" />
+    <Compile Include="Entity\ZYXMYD.cs" />
     <Compile Include="IProductDao.cs" />
-    <Compile Include="Entity\Product.cs" />
     <Compile Include="ProductDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Mapping\Product.hbm.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\CLKZD.hbm.xml" />
+    <EmbeddedResource Include="Mapping\CSKFBJ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\CZCDYD.hbm.xml" />
+    <EmbeddedResource Include="Mapping\DGX.hbm.xml" />
+    <EmbeddedResource Include="Mapping\DLTB.hbm.xml" />
+    <EmbeddedResource Include="Mapping\DZGY.hbm.xml" />
+    <EmbeddedResource Include="Mapping\FJMSQ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\GCZJD.hbm.xml" />
+    <EmbeddedResource Include="Mapping\GDDB.hbm.xml" />
+    <EmbeddedResource Include="Mapping\GJGY.hbm.xml" />
+    <EmbeddedResource Include="Mapping\JZD.hbm.xml" />
+    <EmbeddedResource Include="Mapping\JZKZD.hbm.xml" />
+    <EmbeddedResource Include="Mapping\JZX.hbm.xml" />
+    <EmbeddedResource Include="Mapping\KFYQ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\LSYD.hbm.xml" />
+    <EmbeddedResource Include="Mapping\PDT.hbm.xml" />
+    <EmbeddedResource Include="Mapping\PZWJSTD.hbm.xml" />
+    <EmbeddedResource Include="Mapping\QTJZKFQ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\SCZZBHQ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\SDGY.hbm.xml" />
+    <EmbeddedResource Include="Mapping\SGSJ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\SLGY.hbm.xml" />
+    <EmbeddedResource Include="Mapping\SZGCMX.hbm.xml" />
+    <EmbeddedResource Include="Mapping\SZZSYX.hbm.xml" />
+    <EmbeddedResource Include="Mapping\XZQ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\XZQJX.hbm.xml" />
+    <EmbeddedResource Include="Mapping\YYSSYD.hbm.xml" />
+    <EmbeddedResource Include="Mapping\ZD.hbm.xml" />
+    <EmbeddedResource Include="Mapping\ZD_QLR.hbm.xml" />
+    <EmbeddedResource Include="Mapping\ZJ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\ZRBHQ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\ZRYCBHQ.hbm.xml" />
+    <EmbeddedResource Include="Mapping\ZYXMYD.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

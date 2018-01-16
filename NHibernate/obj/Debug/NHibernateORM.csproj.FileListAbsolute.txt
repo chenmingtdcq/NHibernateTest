@@ -1,6 +1,0 @@
-F:\program\practice\NHibernateTest\NHibernate\bin\Debug\NHibernateORM.dll
-F:\program\practice\NHibernateTest\NHibernate\bin\Debug\NHibernateORM.pdb
-F:\program\practice\NHibernateTest\NHibernate\bin\Debug\NHibernate.dll
-F:\program\practice\NHibernateTest\NHibernate\obj\Debug\NHibernateORM.csprojResolveAssemblyReference.cache
-F:\program\practice\NHibernateTest\NHibernate\obj\Debug\NHibernateORM.dll
-F:\program\practice\NHibernateTest\NHibernate\obj\Debug\NHibernateORM.pdb

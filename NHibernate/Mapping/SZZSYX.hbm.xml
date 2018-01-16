@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="SZZSYX" table="SZZSYX" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="TFBH" type="string">
+         <column name="TFBH" length="50" />
+      </property>
+      <property name="TFMC" type="string">
+         <column name="TFMC" length="100" />
+      </property>
+      <property name="YXLY" type="string">
+         <column name="YXLY" length="100" />
+      </property>
+      <property name="KZDDJ" type="string">
+         <column name="KZDDJ" length="100" />
+      </property>
+      <property name="CTBLC" type="string">
+         <column name="CTBLC" length="7" />
+      </property>
+      <property name="ZBCKX" type="string">
+         <column name="ZBCKX" length="50" not-null="true" />
+      </property>
+      <property name="DDPMZBTY" type="string">
+         <column name="DDPMZBTY" length="50" not-null="true" />
+      </property>
+      <property name="ZYZWXJD" type="float">
+         <column name="ZYZWXJD" precision="20" scale="4" not-null="true" />
+      </property>
+      <property name="ZXJXZB" type="float">
+         <column name="ZXJXZB" precision="20" scale="3" not-null="true" />
+      </property>
+      <property name="ZXJYZB" type="float">
+         <column name="ZXJYZB" precision="20" scale="3" not-null="true" />
+      </property>
+      <property name="YSJXZB" type="float">
+         <column name="YSJXZB" precision="20" scale="3" not-null="true" />
+      </property>
+      <property name="YSJYZB" type="float">
+         <column name="YSJYZB" precision="20" scale="3" not-null="true" />
+      </property>
+      <property name="PSSJ" type="date">
+         <column name="PSSJ" length="8" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

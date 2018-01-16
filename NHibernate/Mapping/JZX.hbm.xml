@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="JZX" table="JZX" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="JZXCD" type="float">
+         <column name="JZXCD" precision="15" scale="2" not-null="true" />
+      </property>
+      <property name="JXXZ" type="string">
+         <column name="JXXZ" length="6" not-null="true" />
+      </property>
+      <property name="JZXLB" type="string">
+         <column name="JZXLB" length="1" not-null="true" />
+      </property>
+      <property name="JZXWZ" type="string">
+         <column name="JZXWZ" length="1" not-null="true" />
+      </property>
+      <property name="QSJXXYSBH" type="string">
+         <column name="QSJXXYSBH" length="30" />
+      </property>
+      <property name="QSJXXYS" type="string">
+         <column name="QSJXXYS" />
+      </property>
+      <property name="QSZYYYSBH" type="string">
+         <column name="QSZYYYSBH" length="30" />
+      </property>
+      <property name="QSZYYYS" type="string">
+         <column name="QSZYYYS" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

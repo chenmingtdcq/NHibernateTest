@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="CZCDYD" table="CZCDYD" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="CZCLX" type="string">
+         <column name="CZCLX" length="4" not-null="true" />
+      </property>
+      <property name="CZCDM" type="string">
+         <column name="CZCDM" length="16" not-null="true" />
+      </property>
+      <property name="CZCMC" type="string">
+         <column name="CZCMC" length="100" not-null="true" />
+      </property>
+      <property name="CZCMJ" type="float">
+         <column name="CZCMJ" precision="15" scale="2" not-null="true" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

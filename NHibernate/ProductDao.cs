@@ -15,16 +15,16 @@ namespace NHibernateORM
 
         public ProductDao()
         {
-            var cfg = new NHibernate.Cfg.Configuration().Configure(@"F:/program/practice/NHibernateTest/NHibernateTest/Config/hibernate.cfg.xml");
+            var cfg = new NHibernate.Cfg.Configuration().Configure(@"F:\code\NHibernateTest\NHibernateTest\Config\hibernate.cfg.xml");
             sessionFactory = cfg.BuildSessionFactory();
             NHibernate.Tool.hbm2ddl.SchemaExport export = new NHibernate.Tool.hbm2ddl.SchemaExport(cfg);
-            export.SetOutputFile(@"F:\program\practice\NHibernateTest\NHibernateTest\bin\sql\sql.sql");
+            export.SetOutputFile(@"F:\code\NHibernateTest\NHibernateTest\bin\sql\sql.sql");
             export.Drop(true, true);
             export.Create(true, true);
         }
 
 
-        public void Delete(Product entity)
+        public void Delete(CLKZD entity)
         {
             using (ISession session = sessionFactory.OpenSession())
             {
@@ -33,31 +33,31 @@ namespace NHibernateORM
             }
         }
 
-        public Product Get(object id)
+        public CLKZD Get(object id)
         {
             using (ISession session = sessionFactory.OpenSession())
             {
-                return session.Get<Product>(id);
+                return session.Get<CLKZD>(id);
             }
         }
 
-        public Product Load(object id)
+        public CLKZD Load(object id)
         {
             using (ISession session = sessionFactory.OpenSession())
             {
-                return session.Load<Product>(id);
+                return session.Load<CLKZD>(id);
             }
         }
 
-        public IList<Product> LoadAll()
+        public IList<CLKZD> LoadAll()
         {
             using (ISession session = sessionFactory.OpenSession())
             {
-                return session.Query<Product>().ToList();
+                return session.Query<CLKZD>().ToList();
             }
         }
 
-        public object Save(Product entity)
+        public object Save(CLKZD entity)
         {
             using (ISession session = sessionFactory.OpenSession())
             {
@@ -67,7 +67,7 @@ namespace NHibernateORM
             }
         }
 
-        public void Update(Product entity)
+        public void Update(CLKZD entity)
         {
             using (ISession session = sessionFactory.OpenSession())
             {

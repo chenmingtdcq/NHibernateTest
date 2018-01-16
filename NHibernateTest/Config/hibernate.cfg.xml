@@ -6,7 +6,7 @@
     </property>
     <property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
     <property name="connection.connection_string">
-      Database=nhibernate;server=localhost;user id=root;password=mysqlbjdxcm2018;pooling=true;Port=3306;Allow Zero Datetime=true;
+      Database=nhibernate;server=localhost;user id=root;password=123456;pooling=true;Port=3306;Allow Zero Datetime=true;
     </property>
     <property name="dialect">NHibernate.Dialect.MySQL5Dialect</property>
     <property name="hbm2ddl.auto">update</property>

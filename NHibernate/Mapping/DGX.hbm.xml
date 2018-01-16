@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="DGX" table="DGX" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="DGXLX" type="string">
+         <column name="DGXLX" length="6" not-null="true" />
+      </property>
+      <property name="BSGC" type="integer">
+         <column name="BSGC" length="4" not-null="true" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

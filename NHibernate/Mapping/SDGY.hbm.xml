@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="SDGY" table="SDGY" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="BHQMC" type="string">
+         <column name="BHQMC" length="100" not-null="true" />
+      </property>
+      <property name="BHQDLWZ" type="string">
+         <column name="BHQDLWZ" not-null="true" />
+      </property>
+      <property name="BHQLXDM" type="string">
+         <column name="BHQLXDM" length="2" not-null="true" />
+      </property>
+      <property name="BHQJB" type="string">
+         <column name="BHQJB" length="6" not-null="true" />
+      </property>
+      <property name="PZJG" type="string">
+         <column name="PZJG" length="100" not-null="true" />
+      </property>
+      <property name="PZSJ" type="date">
+         <column name="PZSJ" length="8" not-null="true" />
+      </property>
+      <property name="BHQMJ" type="float">
+         <column name="BHQMJ" precision="15" scale="2" not-null="true" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

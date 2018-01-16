@@ -69,6 +69,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CreateEntityAndMapping\CreateEntityAndMapping.csproj">
+      <Project>{f3cda2e9-b06a-4e9f-bfaf-3419a23f8eaf}</Project>
+      <Name>CreateEntityAndMapping</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NHibernate\NHibernateORM.csproj">
       <Project>{10952553-1272-4aca-90ce-e56bf3a9ff4b}</Project>
       <Name>NHibernateORM</Name>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="ZD_QLR" table="ZD_QLR" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="ZDBSM" type="string">
+         <column name="ZDBSM" length="18" not-null="true" />
+      </property>
+      <property name="ZDDM" type="string">
+         <column name="ZDDM" length="19" not-null="true" />
+      </property>
+      <property name="QSDWDM" type="string">
+         <column name="QSDWDM" length="19" not-null="true" />
+      </property>
+      <property name="QLRMC" type="string">
+         <column name="QLRMC" length="100" not-null="true" />
+      </property>
+      <property name="DLRXM" type="string">
+         <column name="DLRXM" length="50" />
+      </property>
+      <property name="DLRSFZJLX" type="string">
+         <column name="DLRSFZJLX" length="1" />
+      </property>
+      <property name="DLRSFZJH" type="string">
+         <column name="DLRSFZJH" length="20" />
+      </property>
+      <property name="DLRSFZMS" type="string">
+         <column name="DLRSFZMS" />
+      </property>
+      <property name="DLRDH" type="string">
+         <column name="DLRDH" length="15" />
+      </property>
+      <property name="BDCQZH" type="string">
+         <column name="BDCQZH" length="50" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

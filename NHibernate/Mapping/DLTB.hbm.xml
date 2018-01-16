@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="DLTB" table="DLTB" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="TBYBH" type="string">
+         <column name="TBYBH" length="8" />
+      </property>
+      <property name="TBBH" type="string">
+         <column name="TBBH" length="8" not-null="true" />
+      </property>
+      <property name="DLBM" type="string">
+         <column name="DLBM" length="5" not-null="true" />
+      </property>
+      <property name="DLMC" type="string">
+         <column name="DLMC" length="60" not-null="true" />
+      </property>
+      <property name="QSXZ" type="string">
+         <column name="QSXZ" length="2" not-null="true" />
+      </property>
+      <property name="QSDWDM" type="string">
+         <column name="QSDWDM" length="19" not-null="true" />
+      </property>
+      <property name="QSDWMC" type="string">
+         <column name="QSDWMC" length="60" not-null="true" />
+      </property>
+      <property name="ZLDWDM" type="string">
+         <column name="ZLDWDM" length="19" not-null="true" />
+      </property>
+      <property name="ZLDWMC" type="string">
+         <column name="ZLDWMC" length="60" not-null="true" />
+      </property>
+      <property name="TBMJ" type="float">
+         <column name="TBMJ" precision="15" scale="2" not-null="true" />
+      </property>
+      <property name="KCDLBM" type="string">
+         <column name="KCDLBM" length="5" />
+      </property>
+      <property name="TKXS" type="float">
+         <column name="TKXS" precision="6" scale="4" />
+      </property>
+      <property name="TKMJ" type="float">
+         <column name="TKMJ" precision="15" scale="2" />
+      </property>
+      <property name="TBDLMJ" type="float">
+         <column name="TBDLMJ" precision="15" scale="2" not-null="true" />
+      </property>
+      <property name="GDLX" type="string">
+         <column name="GDLX" length="2" />
+      </property>
+      <property name="GDPDJB" type="string">
+         <column name="GDPDJB" length="2" />
+      </property>
+      <property name="XXTBKD" type="float">
+         <column name="XXTBKD" precision="5" scale="1" />
+      </property>
+      <property name="TBXHDM" type="string">
+         <column name="TBXHDM" length="4" />
+      </property>
+      <property name="TBXHMC" type="string">
+         <column name="TBXHMC" length="20" />
+      </property>
+      <property name="GDZZSXDM" type="string">
+         <column name="GDZZSXDM" length="2" />
+      </property>
+      <property name="GDZZSXMC" type="string">
+         <column name="GDZZSXMC" length="10" />
+      </property>
+      <property name="GDDB" type="string">
+         <column name="GDDB" length="2" />
+      </property>
+      <property name="FRDBS" type="string">
+         <column name="FRDBS" length="1" />
+      </property>
+      <property name="CZCSXM" type="string">
+         <column name="CZCSXM" length="4" />
+      </property>
+      <property name="SJNF" type="integer">
+         <column name="SJNF" length="4" not-null="true" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

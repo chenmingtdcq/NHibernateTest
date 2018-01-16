@@ -26,19 +26,19 @@ namespace NHibernateTest
         [TestMethod]
         public void SaveTest()
         {
-            Init();
-            var product = new NHibernateORM.Entity.Product()
-            {
-                ID = Guid.NewGuid(),
-                BuyPrice = 10M,
-                Code = "ABC123",
-                QuantityPerUnit = "20x1",
-                SellPrice = 11M,
-                Unit = "台",
-            };
-            var obj = productDao.Save(product);
+            //Init();
+            //var product = new NHibernateORM.Entity.Product()
+            //{
+            //    ID = Guid.NewGuid(),
+            //    BuyPrice = 10M,
+            //    Code = "ABC123",
+            //    QuantityPerUnit = "20x1",
+            //    SellPrice = 11M,
+            //    Unit = "台",
+            //};
+            //var obj = productDao.Save(product);
 
-            Assert.IsNotNull(obj);
+            //Assert.IsNotNull(obj);
         }
 
         [TestMethod]
@@ -49,6 +49,20 @@ namespace NHibernateTest
             conn.Open();
             var table = conn.GetSchema();
             DataTable tables = conn.GetSchema(DbMetaDataCollectionNames.ReservedWords);
+        }
+
+        [TestMethod]
+        public void TestMappingXml()
+        {
+            CreateEntityAndMapping.CreateMapping createMapping = new CreateEntityAndMapping.CreateMapping();
+            createMapping.ToMappingXml(@"F:\code\NHibernateTest\struct.txt");
+        }
+
+        [TestMethod]
+        public void TestEntityClass()
+        {
+            CreateEntityAndMapping.CreateEntityClass createEntityClass = new CreateEntityAndMapping.CreateEntityClass();
+            createEntityClass.ToEntityClass(@"F:\code\NHibernateTest\struct.txt");
         }
     }
 }

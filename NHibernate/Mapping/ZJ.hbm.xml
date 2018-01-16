@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="ZJ" table="ZJ" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="ZJNR" type="string">
+         <column name="ZJNR" length="60" not-null="true" />
+      </property>
+      <property name="ZT" type="string">
+         <column name="ZT" length="4" not-null="true" />
+      </property>
+      <property name="YS" type="string">
+         <column name="YS" length="12" not-null="true" />
+      </property>
+      <property name="BS" type="integer">
+         <column name="BS" length="4" />
+      </property>
+      <property name="XZ" type="string">
+         <column name="XZ" length="1" />
+      </property>
+      <property name="XHX" type="string">
+         <column name="XHX" length="1" />
+      </property>
+      <property name="KD" type="float">
+         <column name="KD" precision="15" scale="1" />
+      </property>
+      <property name="GD" type="float">
+         <column name="GD" precision="15" scale="1" />
+      </property>
+      <property name="JG" type="float">
+         <column name="JG" precision="6" scale="2" />
+      </property>
+      <property name="ZJDZXJXZB" type="float">
+         <column name="ZJDZXJXZB" precision="15" scale="3" not-null="true" />
+      </property>
+      <property name="ZJDZXJYZB" type="float">
+         <column name="ZJDZXJYZB" precision="15" scale="3" not-null="true" />
+      </property>
+      <property name="ZJFX" type="float">
+         <column name="ZJFX" precision="10" scale="6" not-null="true" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

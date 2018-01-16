@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="ZYXMYD" table="ZYXMYD" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="XMMC" type="string">
+         <column name="XMMC" length="100" not-null="true" />
+      </property>
+      <property name="XMLX" type="string">
+         <column name="XMLX" length="10" not-null="true" />
+      </property>
+      <property name="XMGM" type="string">
+         <column name="XMGM" length="100" />
+      </property>
+      <property name="ZDMJ" type="float">
+         <column name="ZDMJ" precision="15" scale="2" not-null="true" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

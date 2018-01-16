@@ -9,16 +9,16 @@ namespace NHibernateORM
 {
     public interface IProductDao
     {
-        object Save(Product entity);
+        object Save(CLKZD entity);
 
-        void Update(Product entity);
+        void Update(CLKZD entity);
 
-        void Delete(Product entity);
+        void Delete(CLKZD entity);
 
-        Product Get(object id);
+        CLKZD Get(object id);
 
-        Product Load(object id);
+        CLKZD Load(object id);
 
-        IList<Product> LoadAll();
+        IList<CLKZD> LoadAll();
     }
 }

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="JZKZD" table="JZKZD" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="KZDMC" type="string">
+         <column name="KZDMC" length="50" />
+      </property>
+      <property name="KZDDH" type="string">
+         <column name="KZDDH" length="10" />
+      </property>
+      <property name="KZDLX" type="string">
+         <column name="KZDLX" length="10" not-null="true" />
+      </property>
+      <property name="KZDDJ" type="string">
+         <column name="KZDDJ" length="30" not-null="true" />
+      </property>
+      <property name="DZJ" type="string">
+         <column name="DZJ" />
+      </property>
+      <property name="DWYX" type="string">
+         <column name="DWYX" />
+      </property>
+      <property name="DWZP" type="string">
+         <column name="DWZP" />
+      </property>
+      <property name="XZB" type="float">
+         <column name="XZB" precision="10" scale="2" not-null="true" />
+      </property>
+      <property name="YZB" type="float">
+         <column name="YZB" precision="10" scale="2" not-null="true" />
+      </property>
+      <property name="ZZB" type="float">
+         <column name="ZZB" precision="7" scale="2" not-null="true" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

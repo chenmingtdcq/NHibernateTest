@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="GDDB" table="GDDB" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="XJXZQHDM" type="string">
+         <column name="XJXZQHDM" length="6" not-null="true" />
+      </property>
+      <property name="TBBH" type="string">
+         <column name="TBBH" length="8" not-null="true" />
+      </property>
+      <property name="TBMJ" type="float">
+         <column name="TBMJ" precision="15" scale="2" not-null="true" />
+      </property>
+      <property name="ZRDZS" type="integer">
+         <column name="ZRDZS" length="5" not-null="true" />
+      </property>
+      <property name="ZRD" type="integer">
+         <column name="ZRD" length="2" not-null="true" />
+      </property>
+      <property name="JJDZS" type="integer">
+         <column name="JJDZS" length="5" not-null="true" />
+      </property>
+      <property name="JJD" type="integer">
+         <column name="JJD" length="2" not-null="true" />
+      </property>
+      <property name="LYDZS" type="integer">
+         <column name="LYDZS" length="5" not-null="true" />
+      </property>
+      <property name="LYD" type="integer">
+         <column name="LYD" length="2" not-null="true" />
+      </property>
+      <property name="GJZRDZS" type="integer">
+         <column name="GJZRDZS" length="5" not-null="true" />
+      </property>
+      <property name="GJZRD" type="integer">
+         <column name="GJZRD" length="2" not-null="true" />
+      </property>
+      <property name="GJJJDZS" type="integer">
+         <column name="GJJJDZS" length="5" not-null="true" />
+      </property>
+      <property name="GJJJD" type="integer">
+         <column name="GJJJD" length="2" not-null="true" />
+      </property>
+      <property name="GJLYDZS" type="integer">
+         <column name="GJLYDZS" length="5" not-null="true" />
+      </property>
+      <property name="GJLYD" type="integer">
+         <column name="GJLYD" length="2" not-null="true" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>

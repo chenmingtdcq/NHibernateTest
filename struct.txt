@@ -1,0 +1,444 @@
+NHibernateORM,NHibernateORM.Entity
+CLKZD,CLKZD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+控制点名称,KZDMC,Char,50,C
+控制点点号,KZDDH,Char,10,C
+控制点类型,KZDLX,Char,10,M
+控制点等级,KZDDJ,Char,30,M
+标石类型,BSLX,Char,2,M
+标志类型,BZLX,Char,2,M
+控制点状态,KZDZT,Char,100,O
+点之记,DZJ,Varbin,,O
+X坐标,XZB,Float,(10 3),M
+Y坐标,YZB,Float,(10 3),M
+Z坐标,ZZB,Float,(10 3),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+JZKZD,JZKZD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+控制点名称,KZDMC,Char,50,C
+控制点点号,KZDDH,Char,10,C
+控制点类型,KZDLX,Char,10,M
+控制点等级,KZDDJ,Char,30,M
+点之记,DZJ,Varbin,,O
+点位DOM影像,DWYX,Varbin,,O
+点位实地照片,DWZP,Varbin,,O
+X坐标,XZB,Float,(10 2),M
+Y坐标,YZB,Float,(10 2),M
+Z坐标,ZZB,Float,(7 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+XZQ,XZQ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+行政区代码,XZQDM,Char,12,M
+行政区名称,XZQMC,Char,100,M
+控制面积,KZMJ,Float,(15 2),M
+计算面积,JSMJ,Float,(15 2),C
+描述说明,MSSM,Char,2,M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+XZQJX,XZQJX
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+界线类型,JXLX,Char,6,M
+界线性质,JXXZ,Char,6,M
+界线说明,JXSM,Char,100,O
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+DGX,DGX
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+等高线类型,DGXLX,Char,6,M
+标示高程,BSGC,Int,4,M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+GCZJD,GCZJD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+标示高程,BSGC,Float,(7 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+PDT,PDT
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+坡度级别,PDJB,Char,2,M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+DLTB,DLTB
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+图斑预编号,TBYBH,Char,8,O
+图斑编号,TBBH,Char,8,M
+地类编码,DLBM,Char,5,M
+地类名称,DLMC,Char,60,M
+权属性质,QSXZ,Char,2,M
+权属单位代码,QSDWDM,Char,19,M
+权属单位名称,QSDWMC,Char,60,M
+座落单位代码,ZLDWDM,Char,19,M
+座落单位名称,ZLDWMC,Char,60,M
+图斑面积,TBMJ,Float,(15 2),M
+扣除地类编码,KCDLBM,Char,5,O
+扣除地类系数,TKXS,Float,(6 4),O
+扣除地类面积,TKMJ,Float,(15 2),O
+图斑地类面积,TBDLMJ,Float,(15 2),M
+耕地类型,GDLX,Char,2,C
+耕地坡度级别,GDPDJB,Char,2,C
+线性图斑宽度,XXTBKD,Float,(5 1),C
+图斑细化代码,TBXHDM,Char,4,C
+图斑细化名称,TBXHMC,Char,20,C
+耕地种植属性代码,GDZZSXDM,Char,2,C
+耕地种植属性名称,GDZZSXMC,Char,10,C
+耕地等别,GDDB,Char,2,C
+飞入地标识,FRDBS,Char,1,C
+城镇村属性码,CZCSXM,Char,4,C
+数据年份,SJNF,Int,4,M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+ZD,ZD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+宗地代码,ZDDM,Char,19,M
+宗地四至,ZDSZ,Char,200,O
+座落单位代码,ZLDWDM,Char,19,M
+权利类型,QLLX,Char,2,M
+权利性质,QLXZ,Char,3,M
+土地用途,TDYT,Char,5,M
+实测面积,SCMJ,Float,(15 2),M
+发证面积,FZMJ,Float,(15 2),C
+不动产单元号,BDCDYH,Char,28,C
+登记日期,DJRQ,Date,8,C
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+ZD_QLR,ZD_QLR
+宗地标识码,ZDBSM,Char,18,M
+宗地代码,ZDDM,Char,19,M
+权属单位代码,QSDWDM,Char,19,M
+权利人名称,QLRMC,Char,100,M
+代理人姓名,DLRXM,Char,50,C
+代理人身份证件类型,DLRSFZJLX,Char,1,C
+代理人身份证件号,DLRSFZJH,Char,20,C
+代理人身份证明书,DLRSFZMS,Varbin,,C
+代理人电话号码,DLRDH,Char,15,C
+不动产权证号,BDCQZH,Char,50,O
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+JZX,JZX
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+界址线长度,JZXCD,Float,(15 2),M
+界线性质,JXXZ,Char,6,M
+界址线类别,JZXLB,Char,1,M
+界址线位置,JZXWZ,Char,1,M
+权属界线协议书编号,QSJXXYSBH,Char,30,C
+权属界线协议书,QSJXXYS,Varbin,,C
+权属争议原由书编号,QSZYYYSBH,Char,30,C
+权属争议原由书,QSZYYYS,Varbin,,C
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+JZD,JZD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+界址点号,JZDH,Char,10,M
+界标类型,JBLX,Char,2,M
+界址点类型,JZDLX,Char,2,M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+SZZSYX,SZZSYX
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+图幅编号,TFBH,Char,50,C
+图幅名称,TFMC,Char,100,C
+影像来源,YXLY,Char,100,C
+影像分辨率,KZDDJ,Char,100,C
+成图比例尺,CTBLC,Char,7,O
+坐标系统类型,ZBCKX,Char,50,M
+大地平面投影坐标,DDPMZBTY,Char,50,M
+中央子午线经度,ZYZWXJD,Float,(20 4),M
+左下角X坐标,ZXJXZB,Float,(20 3),M
+左下角Y坐标,ZXJYZB,Float,(20 3),M
+右上角X坐标,YSJXZB,Float,(20 3),M
+右上角Y坐标,YSJYZB,Float,(20 3),M
+拍摄时间,PSSJ,Date,8,C
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+SZGCMX,SZGCMX
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+图幅编号,TFBH,Char,50,O
+图幅名称,TFMC,Char,10,O
+格网尺寸,GWCC,Float,(5 1),M
+成图比例尺,CTBLC,Char,7,M
+坐标系统类型,ZBCKX,Char,50,M
+大地平面投影坐标,DDPMZBTY,Char,50,M
+中央子午线经度,ZYZWXJD,Float,(20 4),M
+左下角X坐标,ZXJXZB,Float,(20 3),M
+左下角Y坐标,ZXJYZB,Float,(20 3),M
+右上角X坐标,YSJXZB,Float,(20 3),M
+右上角Y坐标,YSJYZB,Float,(20 3),M
+制作时间,ZZSJ,Date,8,C
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+KFYQ,KFYQ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+开发园区名称,KFYQMC,Char,100,M
+开发园区类型,KFYQLX,Char,2,M
+开发园区面积,KFYQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+LSYD,LSYD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+关联图斑标识码,GLTBBSM,VarChar,,M
+批准文件名称,PZWJMC,Char,100,C
+批准文号,PZWH,Char,100,C
+用地面积,LSYDMJ,Float,(15 2),M
+批准面积,PZMJ,Float,(15 2),M
+用地类型,YDLX,Char,1,C
+用地用途,YDYT,Char,2,C
+批准日期,PZRQ,Date,8,M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+PZWJSTD,PZWJSTD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+图斑编号,TBBH,Char,16,M
+县级行政区划代码,XJXZQHDM,Char,6,M
+县级行政区划名称,XJXZQHMC,Char,255,M
+项目编号,BZXMBH,Char,255,C
+项目名称,BZXMMC,Char,255,C
+批准文号,BZPZWH,Char,70,C
+批准日期,BZPZRQ,Date,8,C
+项目类型,PZXMLX,Char,10,M
+批准用途,PZYT,Char,5,M
+批准面积,PZMJ,Float,(15 2),C
+图斑面积,BZTBMJ,Float,(15 2),M
+新增建设用地面积,BZXZJSYDMJ,Float,(15 2),C
+占用耕地面积,BZZYGDMJ,Float,(15 2),C
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+CZCDYD,CZCDYD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+城镇村等用地类型,CZCLX,Char,4,M
+城镇村代码,CZCDM,Char,16,M
+城镇村名称,CZCMC,Char,100,M
+城镇村面积,CZCMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+GDDB,GDDB
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+县级行政区划代码,XJXZQHDM,Char,6,M
+等别图斑编号,TBBH,Char,8,M
+等别图斑面积,TBMJ,Float,(15 2),M
+自然等指数,ZRDZS,Int,5,M
+自然等,ZRD,Int,2,M
+经济等指数,JJDZS,Int,5,M
+经济等,JJD,Int,2,M
+利用等指数,LYDZS,Int,5,M
+利用等,LYD,Int,2,M
+国家自然等指数,GJZRDZS,Int,5,M
+国家自然等,GJZRD,Int,2,M
+国家经济等指数,GJJJDZS,Int,5,M
+国家经济等,GJJJD,Int,2,M
+国家利用等指数,GJLYDZS,Int,5,M
+国家利用等,GJLYD,Int,2,M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+GJGY,GJGY
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+ZRBHQ,ZRBHQ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+SLGY,SLGY
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+FJMSQ,FJMSQ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+DZGY,DZGY
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+ZRYCBHQ,ZRYCBHQ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+SDGY,SDGY
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+YYSSYD,YYSSYD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+SCZZBHQ,SCZZBHQ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+QTJZKFQ,QTJZKFQ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+保护区名称,BHQMC,Char,100,M
+保护区地理位置,BHQDLWZ,VarChar,,M
+保护区类型代码,BHQLXDM,Char,2,M
+保护区级别,BHQJB,Char,6,M
+批准机关,PZJG,Char,100,M
+批准时间,PZSJ,Date,8,M
+保护区面积,BHQMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+CSKFBJ,CSKFBJ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+城市名称,CSMC,Char,100,M
+县级行政区划代码,XJXZQHDM,Char,6,M
+城市开发面积,CSKFMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+ZYXMYD,ZYXMYD
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+项目名称,XMMC,Char,100,M
+项目类型,XMLX,Char,10,M
+项目规模,XMGM,Char,100,O
+占地面积,ZDMJ,Float,(15 2),M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+SGSJ,SGSJ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+数据文件名,SJWJM,Varbin,,M
+头文件名,TWJM,Varbin,,O
+元数据文件名,YSJWJM,Varbin,,M
+备注,BZ,VarChar,,O
+%
+NHibernateORM,NHibernateORM.Entity
+ZJ,ZJ
+标识码,BSM,Char,18,M
+要素代码,YSDM,Char,10,M
+注记内容,ZJNR,Char,60,M
+字体,ZT,Char,4,M
+颜色,YS,Char,12,M
+磅数,BS,Int,4,O
+形状,XZ,Char,1,O
+下划线,XHX,Char,1,O
+宽度,KD,Float,(15 1),O
+高度,GD,Float,(15 1),O
+间隔,JG,Float,(6 2),0
+注记点左下角X坐标,ZJDZXJXZB,Float,(15 3),M
+注记点左下角Y坐标,ZJDZXJYZB,Float,(15 3),M
+注记方向,ZJFX,Float,(10 6),M
+备注,BZ,VarChar,,O

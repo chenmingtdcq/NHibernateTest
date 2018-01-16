@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateORM" namespace="NHibernateORM.Entity">
+   <class name="XZQ" table="XZQ" lazy="true">
+      <id name="ID" column="ID" type="Guid">
+         <generator class="assigned" />
+      </id>
+      <property name="BSM" type="string">
+         <column name="BSM" length="18" not-null="true" />
+      </property>
+      <property name="YSDM" type="string">
+         <column name="YSDM" length="10" not-null="true" />
+      </property>
+      <property name="XZQDM" type="string">
+         <column name="XZQDM" length="12" not-null="true" />
+      </property>
+      <property name="XZQMC" type="string">
+         <column name="XZQMC" length="100" not-null="true" />
+      </property>
+      <property name="KZMJ" type="float">
+         <column name="KZMJ" precision="15" scale="2" not-null="true" />
+      </property>
+      <property name="JSMJ" type="float">
+         <column name="JSMJ" precision="15" scale="2" />
+      </property>
+      <property name="MSSM" type="string">
+         <column name="MSSM" length="2" not-null="true" />
+      </property>
+      <property name="BZ" type="string">
+         <column name="BZ" />
+      </property>
+   </class>
+</hibernate-mapping>
